@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Race 1.2.3..</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Race Condition Vulnerable WebApp">
+	<meta name="keywords" content="Race condition, Vulnerable webapp">
+	<meta name="author" content="Muhammad Zeshan ~ Xib3rR4dAr">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+	<link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjwAAAAgAAAAAAAAAAAAAABQAAAAUAAAAAAAAAAAAAAAIAAAAjgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM0AAAC3AAAAFgAAAGkAAAD8AAAA/AAAAGgAAAAWAAAAtwAAAM0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACnAAAA/wAAAMUAAADpAAAA/wAAAP8AAADoAAAAxQAAAP8AAACnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARgAAAP8AAAD0AAAA/wAAAP8AAAD/AAAA/wAAAPQAAAD/AAAARgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACUAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAALkAAAD/AAAA/wAAAP8AAAD/AAAAuAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC6AAAA/wAAAP8AAAD/AAAA/wAAALgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAAP8AAAD/AAAA/wAAAP8AAAC+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALcAAAD/AAAAxQAAAMUAAAD/AAAAtAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACaAAAA7wAAAAYAAAAGAAAA7wAAAJgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZgAAAPwAAABdAAAAXQAAAPwAAABkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABkAAAD6AAAA/wAAAP8AAAD5AAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmAAAAP8AAAD/AAAAlgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0AAADJAAAAxwAAAA0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA7/cAAOZnAADgBwAA4AcAAOAHAADgBwAA8A8AAPgfAAD4HwAA+B8AAPgfAAD4HwAA+B8AAPw/AAD8PwAA/n8AAA==" rel="icon" type="image/x-icon">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+	<link rel="stylesheet" href="/css/custom.css">
+</head>
+
+<body>
+	<div class="container">
+		<br>
+		<h2>Race Condition Vulnerable WebApp - <span style="color:lawngreen" id="challenge"></span></h2>
+		<br>
+		<div class="dropdown"> <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Change Challenge</a>
+			<div class="dropdown-menu" aria-labelledby="dropdownMenuLink"> <a class="dropdown-item" href="#challenge1">Challenge #1</a> <a class="dropdown-item" href="#challenge2">Challenge #2</a> </div>
+		</div>
+		<br>
+		<br>
+		<button type="button" id="unused-vouchers" class="btn btn-success">Unused Vouchers</button>
+		<button type="button" id="available-balance" class="btn btn-primary">Current Balance</button>
+		<button type="button" id="buy-mega-box" class="btn btn-warning" style="color: white;">Buy Mega Box</button>
+		<button type="button" id="login" class="btn btn-info">Login First</button>
+		<button type="button" id="reset-data" class="btn btn-danger">Reset DB</button>
+		<br>
+		<br>
+		<form id="merit-form">
+			<div class="row">
+				<div class="col-md-4 offset-md-3">
+					<input autocomplete="ok-sad" type="text" placeholder="Voucher Code here" class="form-control" id="voucher-code" name="voucher-code"> </div>
+				<div class="col-md-2">
+					<button type="button" id="recharge-voucher" class="btn btn-info">Recharge</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	<script src="/js/clipboard.js"></script>
+	<script src="/js/cookie.js"></script>
+	<script src="/js/custom.js"></script>
+</body>
+
+</html>

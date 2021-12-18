@@ -1,0 +1,4 @@
+CREATE USER 'raceuser'@'localhost' IDENTIFIED BY 'Rac3R_we3';
+GRANT ALL PRIVILEGES ON *.* TO 'raceuser'@'localhost';
+FLUSH PRIVILEGES;
+CREATE database db_race;

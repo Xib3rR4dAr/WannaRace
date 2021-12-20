@@ -1,2 +1,2 @@
 Options -Indexes -FollowSymlinks
-ErrorDocument 404 /index.php
+ErrorDocument 404 /index.html

@@ -22,7 +22,7 @@ docker run -it --rm -p 9050:80 xib3rr4dar/wanna_race:1.0
 Then open in browser relevant IP:PORT
 
 # 🎴 Screenshots
-**Challenge #1**
+### Challenge #1
 
 Main Page
 
@@ -36,7 +36,7 @@ Task is to buy Mega box (which is worth 401 units) by exploiting race condition
 
 ![image](https://user-images.githubusercontent.com/24238512/146770648-d9bb2bb2-cabc-4766-bc7a-ec86e11ef9ec.png)
 
-**Challenge #2**
+### Challenge #2
 
 Same as Challenge #1 but requires login so that PHPSESSID and appropriate cookies are set
 
